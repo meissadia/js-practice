@@ -3,12 +3,12 @@
 Given a string containing a Roman numeral, write a function that returns it's Arabic equivalent.
 ```
 exs. 
-f("") = 0  
-f("I") = 1  
-f("X") = 10  
-f("IX") = 9 
-f("V") = 5
-f('VIII')) = (8);
+f('') = 0  
+f('I') = 1  
+f('X') = 10  
+f('IX') = 9 
+f('V') = 5
+f('VIII') = 8;
 ```
 
 ## Motivation
