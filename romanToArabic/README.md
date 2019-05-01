@@ -6,7 +6,9 @@ exs.
 f("") = 0  
 f("I") = 1  
 f("X") = 10  
-f("IX") = 9  
+f("IX") = 9 
+f("V") = 5
+f('VIII')) = (8);
 ```
 
 ## Motivation

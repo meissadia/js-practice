@@ -23,7 +23,7 @@ const mapR2A = romanNumeral => numberMap[romanNumeral];
  */
 const romanToArabic = (romanNumerals = '', previousArabic = Number.POSITIVE_INFINITY) => {
     if(doneProcessing(romanNumerals)) return 0;
-    var convertedArabic = mapR2A(romanNumerals[0]);
+    var convertedArabic = mapR2A(romanNumerals[0].toUpperCase());
 
     // Subtract Case
     if(convertedArabic > previousArabic) 

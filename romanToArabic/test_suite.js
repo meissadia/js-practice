@@ -11,7 +11,7 @@ const test = () => {
     expect(romanToArabic([])).to.equal(0);
     // Straigh Forward Conversion
     expect(romanToArabic('M')).to.equal(1000);
-    expect(romanToArabic('VIII')).to.eql(8);
+    expect(romanToArabic('viii')).to.eql(8);
     // Simple Subtraction case
     expect(romanToArabic('IX')).to.eql(9);
     // Complex Subtraction case
