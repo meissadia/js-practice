@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./App.css";
 
 const PhoneBookForm = props => {
   const [first, updateFirst] = useState("");
@@ -43,42 +42,11 @@ const PhoneBookForm = props => {
         onChange={e => updatePhone(e.target.value)}
       />
       <button type="submit">Submit</button>
+      <button type="reset" onClick={clearStates}>
+        Clear
+      </button>
     </form>
   );
 };
 
-const PhoneBookDisplay = props => {
-  return (
-    <table>
-      <thead>
-        <tr>
-          <td>First</td>
-          <td>Last</td>
-          <td>Phone</td>
-        </tr>
-      </thead>
-      <tbody>
-        {props.contacts.map((contact, i) => (
-          <tr key={i}>
-            <td>{contact[0]}</td>
-            <td>{contact[1]}</td>
-            <td>{contact[2]}</td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
-  );
-};
-
-function App() {
-  const [contacts, updateContacts] = useState([]);
-
-  return (
-    <div>
-      <PhoneBookForm add={updateContacts} contacts={contacts} />
-      <PhoneBookDisplay contacts={contacts} />
-    </div>
-  );
-}
-
-export default App;
+export default PhoneBookForm;
