@@ -1,6 +1,13 @@
 const items = [{ w: 3, v: 12 }, { w: 2, v: 10 }, { w: 1, v: 6 }];
 const maxWeight = 5;
 
+/**
+ * Return the maximum value up to the given weight
+ * @param {Object[]} items
+ * @param {Number} items.w Item Weight
+ * @param {Number} items.v Item Value
+ * @param {Number} weight Maximum allowed weight
+ */
 function knapsack(items, weight) {
   const cache = {};
   return krecursive(items, weight, 0, cache); // takes a search index
